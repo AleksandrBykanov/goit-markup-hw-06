@@ -51,6 +51,19 @@ a:focus {
   padding-bottom: 96px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header {
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
   border-bottom: 1px solid #e7e9fc;
@@ -123,6 +136,30 @@ a:focus {
 :focus {
   background-color: #404BBF;
 }
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.feature-item {
+  width: 288px;
+  height: 120px;
+}
+
+.feature-h {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+
+.feature-p {
+  font-weight: 500;
+}
+
 
 
 
@@ -333,6 +370,19 @@ a:focus {
     text-transform: capitalize;
   }
   
+  .feature-icon-list {
+    display: none;
+  }
+
+  .feature-item {
+    margin-bottom: 72px;
+  }
+  .feature-item:last-child {
+    margin-bottom: 0;
+  }
+  .feature-h {
+    text-align: center;
+  }
 
 }
 
@@ -442,6 +492,19 @@ a:focus {
   .hero-title {
     margin-bottom: 36px;
   }
+
+  .feature-icon-list {
+    display: none;
+  }
+
+  .feature-item {
+    width: calc((100% - 24px) / 2);
+    margin-bottom: 72px;
+  }
+  .feature-item:nth-child(3),
+  .feature-item:nth-child(4)  {
+    margin-bottom: 0;
+  }
   
 
 }
@@ -486,5 +549,36 @@ a:focus {
 
   .hero-title {
     margin-bottom: 48px;
+  }
+
+  .feature-icon-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  
+  .feature-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background-color: #F4F4FD;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+  }
+
+  .feature-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .feature-h {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .feature-p {
+    font-weight: 400;
   }
 }
