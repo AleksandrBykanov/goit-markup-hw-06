@@ -152,6 +152,10 @@ a:focus {
   margin-bottom: 8px;
 }
 
+.feature-p {
+  font-weight: 500;
+}
+
 .team {
   background: #f4f4fd;
 }
@@ -175,7 +179,6 @@ a:focus {
 .team-border {
   padding-top: 32px;
   padding-bottom: 32px;
-
 }
 
 .team-h {
@@ -206,7 +209,6 @@ a:focus {
   justify-content: center;
   align-items: center;
   gap: 24px;
-
 }
 
 .team-icon-item {
@@ -697,7 +699,10 @@ a:focus {
   }
 
   .mobile-container {
+    display: flex;
+    flex-direction: column;
     max-width: 320px;
+    height: 100%;
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 24px;
@@ -745,7 +750,7 @@ a:focus {
   }
 
   .mobile-nav {
-    padding-top: 72px;
+    margin-bottom: auto;
   }
 
   .mobile-list {
@@ -754,7 +759,7 @@ a:focus {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    margin-bottom: 168px;
+    margin-bottom: 24px;
   }
 
   .mobile-link {
@@ -780,10 +785,15 @@ a:focus {
   }
 
   .mobile-address-link {
+    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     color: #434455;
+  }
+
+  .current {
+    color: #404BBF;
   }
 
   .mobile-address-link:hover,
@@ -874,6 +884,9 @@ a:focus {
     row-gap: 72px;
   }
 
+  .portfolio-list {
+    row-gap: 48px;
+  }
   .footer-container {
     row-gap: 72px;
   }
@@ -954,7 +967,6 @@ a:focus {
     display: none;
   }
 
-
   .header-navbar {
     display: inherit;
     align-items: center;
@@ -1016,6 +1028,7 @@ a:focus {
   }
 
   .address-link {
+    font-size: 12px;
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -1086,6 +1099,10 @@ a:focus {
     padding: 24px 0;
   }
 
+  .address-link {
+    font-size: 16px;
+  }
+
   .section {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -1138,6 +1155,9 @@ a:focus {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+  }
+  .feature-p {
+    font-weight: 400;
   }
 
   .portfolio-list {
